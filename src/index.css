@@ -156,7 +156,7 @@ a:focus-visible {
 .card {
   background-color: var(--surface-color);
   border: 1px solid var(--border-color);
-  border-radius: 16px;
+  border-radius: 10px;
   box-shadow: var(--shadow-sm);
 }
 
@@ -233,7 +233,7 @@ a:focus-visible {
 .logo-icon {
   width: 36px;
   height: 36px;
-  border-radius: 10px;
+  border-radius: 8px;
   background: var(--primary-gradient);
   color: var(--on-primary);
   display: inline-flex;
@@ -255,7 +255,7 @@ a:focus-visible {
   align-items: center;
   background-color: var(--surface-muted);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -306,7 +306,7 @@ a:focus-visible {
   position: relative;
   width: 40px;
   height: 40px;
-  border-radius: 12px;
+  border-radius: 8px;
   background-color: var(--surface-muted);
   border: 1px solid var(--border-color);
   display: inline-flex;
@@ -353,7 +353,7 @@ a:focus-visible {
   align-items: center;
   gap: 8px;
   padding: 4px 10px 4px 4px;
-  border-radius: 999px;
+  border-radius: 8px;
   background-color: var(--surface-muted);
   border: 1px solid var(--border-color);
 }
@@ -383,7 +383,7 @@ a:focus-visible {
   justify-content: center;
   gap: 6px;
   padding: 10px 16px;
-  border-radius: 12px;
+  border-radius: 8px;
   border: 1px solid transparent;
   font-size: 0.9rem;
   font-weight: 600;
@@ -393,7 +393,7 @@ a:focus-visible {
 .btn-sm {
   padding: 6px 12px;
   font-size: 0.82rem;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .btn-full {
@@ -496,7 +496,7 @@ a:focus-visible {
   gap: 10px;
   padding: 10px 12px;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   background: transparent;
   color: var(--text-color);
   font-size: 0.92rem;
@@ -555,7 +555,7 @@ a:focus-visible {
   align-items: center;
   gap: 6px;
   padding: 8px 14px;
-  border-radius: 999px;
+  border-radius: 8px;
   border: 1px solid var(--border-color);
   background-color: var(--surface-color);
   color: var(--text-color);
@@ -586,7 +586,7 @@ a:focus-visible {
 .hero-banner {
   background: var(--hero-gradient);
   border: 1px solid var(--border);
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 28px;
   color: var(--text);
   display: grid;
@@ -606,7 +606,7 @@ a:focus-visible {
 .hero-pill {
   display: inline-block;
   padding: 4px 12px;
-  border-radius: 999px;
+  border-radius: 6px;
   background-color: var(--primary-soft);
   color: var(--primary);
   font-size: 0.78rem;
@@ -637,7 +637,7 @@ a:focus-visible {
   background-color: var(--primary);
   color: var(--on-primary);
   padding: 11px 22px;
-  border-radius: 12px;
+  border-radius: 8px;
   font-weight: 700;
 }
 
@@ -655,7 +655,7 @@ a:focus-visible {
 .hero-product-showcase {
   width: 200px;
   height: 200px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: var(--bg-card);
   border: 1px solid var(--border);
   padding: 18px;
@@ -674,7 +674,7 @@ a:focus-visible {
 .hero-visual-placeholder {
   width: 200px;
   height: 200px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: var(--bg-image);
   border: 1px solid var(--border);
 }
@@ -741,7 +741,7 @@ a:focus-visible {
 .info-icon {
   width: 40px;
   height: 40px;
-  border-radius: 12px;
+  border-radius: 8px;
   background-color: var(--primary-soft);
   color: var(--primary);
   display: inline-flex;
@@ -789,7 +789,7 @@ a:focus-visible {
 .category-card {
   background-color: var(--surface-color);
   border: 1px solid var(--border-color);
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 14px 12px;
   display: flex;
   flex-direction: column;
@@ -813,7 +813,7 @@ a:focus-visible {
 .category-thumb-wrap {
   width: 64px;
   height: 64px;
-  border-radius: 12px;
+  border-radius: 8px;
   background-color: var(--bg-image);
   padding: 8px;
   display: flex;
@@ -911,7 +911,7 @@ a:focus-visible {
   font-weight: 600;
   text-transform: uppercase;
   padding: 3px 8px;
-  border-radius: 999px;
+  border-radius: 6px;
   background-color: var(--primary-soft);
   color: var(--primary-color);
 }
@@ -1004,7 +1004,7 @@ a:focus-visible {
 .deal-image-wrap {
   height: 150px;
   background-color: var(--bg-image);
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 12px;
   display: flex;
   align-items: center;
@@ -1031,7 +1031,7 @@ a:focus-visible {
   font-size: 0.74rem;
   font-weight: 700;
   padding: 2px 8px;
-  border-radius: 999px;
+  border-radius: 6px;
 }
 
 .deal-title {
@@ -1079,7 +1079,7 @@ a:focus-visible {
   align-items: center;
   gap: 10px;
   padding: 6px;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .trending-item:hover {
@@ -1089,7 +1089,7 @@ a:focus-visible {
 .trending-thumb-wrap {
   width: 48px;
   height: 48px;
-  border-radius: 10px;
+  border-radius: 6px;
   background-color: var(--bg-image);
   padding: 5px;
   display: flex;
@@ -1197,7 +1197,7 @@ a:focus-visible {
 
 .detail-image-wrap {
   background-color: var(--bg-image);
-  border-radius: 16px;
+  border-radius: 10px;
   padding: 24px;
   display: flex;
   align-items: center;
@@ -1924,7 +1924,7 @@ a:focus-visible {
 .login-welcome-badge {
   display: inline-block;
   padding: 5px 12px;
-  border-radius: 999px;
+  border-radius: 6px;
   background-color: var(--surface-color);
   border: 1px solid var(--border-color);
   color: var(--primary-color);
@@ -1961,7 +1961,7 @@ a:focus-visible {
 .login-feature-pill {
   background-color: var(--surface-color);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 10px 14px;
   display: inline-flex;
   align-items: center;
@@ -1994,7 +1994,7 @@ a:focus-visible {
   right: 26px;
   width: 72px;
   height: 72px;
-  border-radius: 16px;
+  border-radius: 10px;
   background: var(--primary-gradient);
   transform: rotate(14deg);
   opacity: 0.85;
@@ -2008,7 +2008,7 @@ a:focus-visible {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-color);
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 28px 24px;
   box-shadow: var(--shadow-md);
   display: flex;
@@ -2031,7 +2031,7 @@ a:focus-visible {
 .login-card-logo {
   width: 48px;
   height: 48px;
-  border-radius: 14px;
+  border-radius: 10px;
   background: var(--primary-gradient);
   color: var(--on-primary);
   padding: 11px;
@@ -2068,7 +2068,7 @@ a:focus-visible {
 .login-field input {
   width: 100%;
   padding: 11px 14px;
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1px solid var(--border-color);
   background-color: var(--surface-muted);
   color: var(--text-color);
@@ -2145,7 +2145,7 @@ a:focus-visible {
   width: 100%;
   padding: 12px 18px;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   background: var(--primary-gradient);
   color: var(--on-primary);
   font-size: 0.95rem;
@@ -2205,4 +2205,454 @@ a:focus-visible {
 .login-terms span {
   color: var(--primary-color);
   font-weight: 600;
+}
+
+/* Cart Toast Notification */
+.cart-toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(360px, calc(100vw - 32px));
+  pointer-events: none;
+}
+
+.cart-toast {
+  pointer-events: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  background-color: var(--bg-card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--success-color);
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  animation: toast-slide-in 0.25s ease forwards;
+}
+
+.cart-toast.leaving {
+  animation: toast-fade-out 0.25s ease forwards;
+}
+
+.cart-toast-icon {
+  color: var(--success-color);
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: inline-flex;
+}
+
+.cart-toast-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cart-toast-message {
+  font-size: 0.88rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.cart-toast-link {
+  align-self: flex-start;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.cart-toast-link:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+.cart-toast-close {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-toast-close:hover {
+  background-color: var(--primary-soft);
+  color: var(--primary);
+}
+
+@keyframes toast-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes toast-fade-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+/* Login / Register Tabs */
+.login-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  padding: 4px;
+  background-color: var(--surface-muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.login-tab {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-tab:hover {
+  color: var(--text);
+}
+
+.login-tab.active {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+
+.login-switch-text {
+  text-align: center;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+.login-switch-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: var(--primary);
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-switch-btn:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+/* Header User Hover Dropdown (Shopee-style) */
+.user-menu-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.user-menu-wrapper::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 10px;
+}
+
+.user-pill {
+  cursor: pointer;
+}
+
+.user-pill:hover {
+  border-color: var(--primary);
+}
+
+.user-avatar-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.user-chevron {
+  color: var(--text-muted);
+  transition: transform 0.18s ease;
+}
+
+.user-menu-wrapper:hover .user-chevron,
+.user-menu-wrapper:focus-within .user-chevron {
+  transform: rotate(180deg);
+  color: var(--primary);
+}
+
+.user-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 196px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  z-index: 60;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+}
+
+.user-menu-wrapper:hover .user-dropdown,
+.user-menu-wrapper:focus-within .user-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.user-dropdown-item {
+  width: 100%;
+  text-align: left;
+  padding: 9px 12px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: block;
+}
+
+.user-dropdown-item:hover {
+  background-color: var(--primary-soft);
+  color: var(--primary);
+}
+
+.user-dropdown-divider {
+  height: 1px;
+  background-color: var(--border);
+  margin: 4px 0;
+}
+
+.user-dropdown-logout {
+  color: var(--danger-color);
+  font-weight: 600;
+}
+
+.user-dropdown-logout:hover {
+  background-color: var(--danger-soft);
+  color: var(--danger-color);
+}
+
+/* Account Page (/account) */
+.account-page {
+  width: 100%;
+  max-width: 780px;
+  margin: 12px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.account-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.account-tabs {
+  display: inline-flex;
+  gap: 6px;
+  padding: 4px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.account-tab {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.account-tab:hover {
+  color: var(--text);
+}
+
+.account-tab.active {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+
+.account-card {
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.account-warning-banner {
+  background-color: var(--danger-soft);
+  color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+}
+
+.account-avatar-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.account-avatar-preview {
+  width: 84px;
+  height: 84px;
+  border-radius: 999px;
+  background: var(--primary-gradient);
+  color: var(--on-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid var(--border);
+}
+
+.account-avatar-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.account-avatar-controls {
+  flex: 1;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.account-upload-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.account-upload-label {
+  cursor: pointer;
+}
+
+.account-fields-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .account-fields-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.account-card input:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.account-card input.input-error {
+  border-color: var(--danger-color);
+  box-shadow: 0 0 0 3px var(--danger-soft);
+}
+
+.required-mark {
+  color: var(--danger-color);
+}
+
+.account-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.account-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.order-history-card {
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-history-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.order-date {
+  font-size: 0.84rem;
+}
+
+.order-shipping-line {
+  font-size: 0.88rem;
+}
+
+.checkout-address-val {
+  text-align: right;
+  max-width: 360px;
+}
+
+.checkout-meta-edit {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 4px;
 }

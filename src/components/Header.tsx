@@ -48,6 +48,8 @@ export function Header() {
     }
   };
 
+  const displayName = user?.fullName?.trim() || user?.username || '';
+
   return (
     <header className="header">
       <div className="container header-inner">
@@ -107,20 +109,59 @@ export function Header() {
           </NavLink>
 
           {user ? (
-            <div className="user-actions">
-              <span className="user-pill">
-                <span className="user-avatar" aria-hidden="true">
-                  {user.username.charAt(0).toUpperCase()}
-                </span>
-                <span className="username">{user.username}</span>
-              </span>
-              <button
-                type="button"
-                className="btn btn-outline btn-sm"
-                onClick={logout}
-              >
-                Đăng xuất
-              </button>
+            <div className="user-menu-wrapper">
+              <Link to="/account" className="user-pill">
+                {user.avatar ? (
+                  <img
+                    src={user.avatar}
+                    alt={displayName}
+                    className="user-avatar-img"
+                  />
+                ) : (
+                  <span className="user-avatar" aria-hidden="true">
+                    {displayName.charAt(0).toUpperCase()}
+                  </span>
+                )}
+                <span className="username">{displayName}</span>
+                <svg
+                  className="user-chevron"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.2"
+                  aria-hidden="true"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </Link>
+
+              <div className="user-dropdown" role="menu">
+                <Link
+                  to="/account"
+                  className="user-dropdown-item"
+                  role="menuitem"
+                >
+                  Tài khoản của tôi
+                </Link>
+                <Link
+                  to="/account?tab=orders"
+                  className="user-dropdown-item"
+                  role="menuitem"
+                >
+                  Đơn mua
+                </Link>
+                <div className="user-dropdown-divider" />
+                <button
+                  type="button"
+                  className="user-dropdown-item user-dropdown-logout"
+                  role="menuitem"
+                  onClick={logout}
+                >
+                  Đăng xuất
+                </button>
+              </div>
             </div>
           ) : (
             <NavLink to="/login" className="btn btn-primary btn-sm">

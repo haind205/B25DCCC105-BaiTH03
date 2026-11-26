@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../app/hooks';
 import {
   clearCart,
@@ -8,6 +8,7 @@ import {
   selectCartTotalQuantity,
 } from '../features/cart/cartSlice';
 import { useAuth } from '../contexts/AuthContext';
+import { saveOrderRecord } from '../utils/storage';
 
 export function CheckoutPage() {
   const dispatch = useAppDispatch();
@@ -17,7 +18,34 @@ export function CheckoutPage() {
   const totalPrice = useAppSelector(selectCartTotalPrice);
   const [orderSuccess, setOrderSuccess] = useState<boolean>(false);
 
+  const hasMissingShippingInfo =
+    !user?.phone?.trim() || !user?.address?.trim();
+
+  if (!orderSuccess && items.length > 0 && hasMissingShippingInfo) {
+    return (
+      <Navigate
+        to="/account"
+        state={{ from: '/checkout', requireShippingInfo: true }}
+        replace
+      />
+    );
+  }
+
+  const displayName = user?.fullName?.trim() || user?.username || '';
+
   const handlePlaceOrder = (): void => {
+    if (user) {
+      saveOrderRecord(user.username, {
+        id: String(Date.now()).slice(-6),
+        createdAt: new Date().toISOString(),
+        items,
+        totalQuantity,
+        totalPrice,
+        customerName: displayName,
+        phone: user.phone ?? '',
+        address: user.address ?? '',
+      });
+    }
     dispatch(clearCart());
     setOrderSuccess(true);
   };
@@ -28,11 +56,19 @@ export function CheckoutPage() {
         <div className="card status-box success-box checkout-status-box">
           <h1>Đặt hàng thành công!</h1>
           <p>
-            Cảm ơn <strong>{user?.username}</strong> đã mua sắm tại ShopMini.
+            Cảm ơn <strong>{displayName}</strong> đã mua sắm tại ShopMini.
           </p>
-          <Link to="/" className="btn btn-primary checkout-action-btn">
-            Quay lại trang chủ
-          </Link>
+          <div className="detail-actions">
+            <Link to="/" className="btn btn-primary checkout-action-btn">
+              Quay lại trang chủ
+            </Link>
+            <Link
+              to="/account?tab=orders"
+              className="btn btn-outline checkout-action-btn"
+            >
+              Xem đơn mua
+            </Link>
+          </div>
         </div>
       </section>
     );
@@ -67,11 +103,24 @@ export function CheckoutPage() {
         <div className="checkout-meta">
           <div className="checkout-meta-row">
             <span className="muted-text">Khách hàng</span>
-            <strong>{user?.username}</strong>
+            <strong>{displayName}</strong>
+          </div>
+          <div className="checkout-meta-row">
+            <span className="muted-text">Số điện thoại</span>
+            <strong>{user?.phone}</strong>
+          </div>
+          <div className="checkout-meta-row">
+            <span className="muted-text">Địa chỉ nhận hàng</span>
+            <strong className="checkout-address-val">{user?.address}</strong>
           </div>
           <div className="checkout-meta-row">
             <span className="muted-text">Tổng số lượng</span>
             <strong>{totalQuantity} sản phẩm</strong>
+          </div>
+          <div className="checkout-meta-edit">
+            <Link to="/account" className="link-reset">
+              Thay đổi thông tin nhận hàng
+            </Link>
           </div>
         </div>
 

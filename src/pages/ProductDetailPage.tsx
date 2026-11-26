@@ -18,7 +18,7 @@ export function ProductDetailPage() {
   const productId = Number(id);
   const product = items.find((item) => item.id === productId);
 
-  if (status === 'loading') {
+  if (status === 'loading' || status === 'idle') {
     return (
       <div className="card status-box">Đang tải chi tiết sản phẩm...</div>
     );

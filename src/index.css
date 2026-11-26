@@ -1661,13 +1661,84 @@ a:focus-visible {
   color: var(--text-color);
 }
 
+.checkout-page {
+  width: 100%;
+  max-width: 640px;
+  margin: 16px auto 0;
+}
+
+.checkout-status-box {
+  border-radius: 10px;
+}
+
+.checkout-action-btn {
+  border-radius: 8px;
+}
+
 .checkout-card {
-  max-width: 620px;
-  margin-top: 16px;
-  padding: 24px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .checkout-card {
+    padding: 28px 32px;
+  }
+}
+
+.checkout-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.checkout-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.checkout-subtitle {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.checkout-meta {
+  background-color: var(--surface-muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkout-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.94rem;
+}
+
+.checkout-items-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkout-section-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
 }
 
 .checkout-list {
@@ -1677,13 +1748,41 @@ a:focus-visible {
   padding: 12px 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .checkout-item {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 0.94rem;
+}
+
+.checkout-item-name {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.checkout-item-qty {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.checkout-item-price {
+  flex-shrink: 0;
+}
+
+.checkout-total {
+  align-items: baseline;
+  font-weight: 700;
+  padding-top: 2px;
+}
+
+.checkout-submit-btn {
+  border-radius: 8px;
+  padding: 13px 20px;
   font-size: 0.95rem;
 }
 
